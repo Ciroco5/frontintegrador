@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador Frontend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+        <nav class="navbar-expand-lg bg-body-tertiary">
+            <div class="cabecera container-fluid">
+              <img class="codo-a-codo" src="/imagenes_integrador_front/codoacodo.png" alt="codoacodo">
+              <a class="navbar-brand" href="#">Conf BS As</a>
+              
+                <div class="conferencia navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                  <a class="nav-link" href="#">Los oradores</a>
+                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                  <a class="nav-link "  href="#">Conviértete en orador</a>
+                  <a class="tickets nav-link "  href="#">Comprar tickets</a>
+                </div>
+              
+            </div>
+          </nav>
+    
+
+   
+    <div class="slide">
+
+      <div class="text-slide col-5">
+        <h3>Conf BS AS</h3>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartie con nuestra comunidad y experiencia de los expertos que estśn creando el futuro de internet. 
+            Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti . Te esperamos!</p>
+
+            <button type="button" id="ser-orador" class="btn btn-outline-secondary">Quiero ser orador</button>  
+            <button type="button" id="comprar-tickets" class="btn btn-success">Comprar tickets</button>
+        </div>    
+    </div>
+
+<div class="conoce-oradores">
+  <h4>conoce a los</h4>
+    <h3>Oradores</h3>
+</div>
+
+<div class="person col-12">
+   
+         <div class="container-cards">
+            
+            <div class="card col-4" >
+                <img src=" /imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">JavaScript</button>
+                    <button type="button" class="btn btn-info">React</button>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eius pariatur ab. Illum perferendis consequuntur doloribus saepe a dolorem error adipisci? Esse voluptatem eos, ab laudantium minima rem accusamus ea!</p>
+                  
+                </div>
+              </div>
+       
+              <div class="card col-4" >
+                <img src="imagenes_integrador_front/bill.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">JavaScript</button>
+                    <button type="button" class="btn btn-info">React</button>
+                  <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident quibusdam odio aperiam repudiandae, tempore eum saepe dolores, voluptas laudantium voluptates accusamus, sapiente ipsum eius. Asperiores illum delectus officiis ullam.</p>
+                  
+                </div>
+              </div>
+
+              <div class="card col-4" >
+                <img src="imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-secondary">Negocios</button>
+                    <button type="button" class="btn btn-danger">StrartUp</button>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nostrum natus, magnam error velit quis enim vero voluptate placeat sunt doloribus omnis repudiandae quas culpa quod ducimus a ea illum?</p>
+                  
+                </div>
+              </div>
+        </div>
+
+</div>
+
+<div class="galeria col-12">
+    <div class="honolulu col-6">
+        <img src="/imagenes_integrador_front/honolulu.jpg" alt="honolulu">
+    </div>
+    <div class="galeria-texto col-6">
+        <h2>BS AS - Octubre </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, quidem at autem iste officiis dolorum aut. Incidunt illo voluptate, itaque aspernatur ipsam eaque ad et consequuntur totam, iusto voluptatem vero!</p>
+        <button type="button"  class="btn btn-outline-light">Conocé mas</button>
+
+    </div>
+ </div>
+
+ <div class="anotarse">
+    <p><b>conviertete en un</b></p>
+    <h3>Orador</h3>
+    <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+ </div>
+ <div class="contenedor-formulario col-12">
+    <form class="form-container col-8">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+        <div>
+            <textarea name="" placeholder="¿Sobre que quieres hablar?" id="texto" cols="60" rows="5"></textarea>
+        </div>
+        <div id="recordatorio" class="form-text mb-3 mt-0">Recuerda incluir un titulo para tu charla. </div>
+        <button type="submit" class="btn btn-success ">Enviar</button>
+      </form>
+
+  </div>
+ <footer class="footer">
+    <ul class="footer-list">
+
+        <li>Preguntas frecuentes</li>
+        <li>Contáctanos</li>
+        <li>Prensa</li>
+        <li>Conferencias</li>
+        <li>Términos y condifciones</li>
+        <li>Privacidad</li>
+        <li>Estudiantes</li>
+
+    </ul>
+ </footer>
+</body>
+</html>
